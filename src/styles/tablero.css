@@ -1,0 +1,320 @@
+.theme-light {
+    --color-uno: #6499b8;
+    --color-dos: #8079a3;
+    --color-tres: #cfa2b6;
+    --color-cuatro: #7cc9c3;
+    --color-cinco: #dcd5dc;
+    --font-color: white;
+    --hexs: url("../imgs/hex.jpg");
+    --picaro: url("../imgs/picaro.jpg");
+    --arquero: url("../imgs/arquero.jpg");
+    --hielo: url("../imgs/hielo.jpg");
+    --tanque: url("../imgs/tanque.jpg");
+    --fuego: url("../imgs/fuego.jpg");
+    --julio: url("../imgs/julio.jpg");
+    --francisca: url("../imgs/francisca.jpg");
+    --ignacio: url("../imgs/ignacio.jpg");
+    z-index: 0;
+    
+  }
+
+  .theme-dark {
+    --color-uno: #434741;
+    --color-dos: #53503e;
+    --color-tres: #676d5d;
+    --color-cuatro: #2e2e2c;
+    --color-cinco: #575c51;
+    --font-color: white;
+    --hexs: url("../imgs/hexs_d.jpg");
+    --picaro: url("../imgs/picaro_d.jpg");
+    --arquero: url("../imgs/arquero_d.jpg");
+    --hielo: url("../imgs/hielo_d.jpg");
+    --fuego: url("../imgs/fuego_d.jpg");
+    --tanque: url("../imgs/tanque.jpg");
+    --julio: url("../imgs/julio_d.jpg");
+    --francisca: url("../imgs/francisca_d.jpg");
+    --ignacio: url("../imgs/ignacio_d.jpg");
+    background-color: var(--color-uno);
+    z-index: 0;
+  }
+  
+.hexagon {
+    color: white;
+    width: 60px;
+    height: 35px;
+    background-color: #757373;
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+    font-size: 12px;
+  }
+  
+  
+  .hexagon:before, .hexagon:after{
+    box-sizing: border-box;
+    content: '';
+    width: 60px;
+    height: 35px;
+    position: absolute;
+    background-color: #757373;
+    left: 0px;
+    z-index: -1;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  .hexagon:before {
+    transform: rotate(60deg);
+  }
+  .hexagon:after {
+    transform: rotate(-60deg);
+  }
+  
+  .hexagon_inv {
+    color: #6499b8;
+    width: 60px;
+    height: 35px;
+    background-color: #6499b8;
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+    font-size: 10px;
+  }
+  .hexagon_inv span {
+    margin: 45% 40% 0;
+  }
+  
+  .hexagon_inv:before, .hexagon_inv:after{
+    box-sizing: border-box;
+    content: '';
+    width: 60px;
+    height: 35px;
+    position: absolute;
+    background-color: #6499b8;
+    left: 0px;
+    z-index: -1;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  .hexagon_inv:before {
+    transform: rotate(60deg);
+  }
+  .hexagon_inv:after {
+    transform: rotate(-60deg);
+  }
+
+  .hexagon_pos {
+    color: #7cc9c3;
+    width: 60px;
+    height: 35px;
+    background-color: #7cc9c3;
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+    font-size: 10px;
+  }
+  .hexagon_pos span {
+    margin: 45% 40% 0;
+  }
+  
+  .hexagon_pos:before, .hexagon_pos:after{
+    box-sizing: border-box;
+    content: '';
+    width: 60px;
+    height: 35px;
+    position: absolute;
+    background-color: #7cc9c3;
+    left: 0px;
+    z-index: -1;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  .hexagon_pos:before {
+    transform: rotate(60deg);
+  }
+  .hexagon_pos:after {
+    transform: rotate(-60deg);
+  }
+
+  .hexagon_open {
+    color: #8079a3;
+    width: 60px;
+    height: 35px;
+    background-color: #8079a3;
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+    font-size: 10px;
+  }
+  .hexagon_open span {
+    margin: 45% 40% 0;
+  }
+  
+  .hexagon_open:before, .hexagon_open:after{
+    box-sizing: border-box;
+    content: '';
+    width: 60px;
+    height: 35px;
+    position: absolute;
+    background-color: #8079a3;
+    left: 0px;
+    z-index: -1;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  .hexagon_open:before {
+    transform: rotate(60deg);
+  }
+  .hexagon_open:after {
+    transform: rotate(-60deg);
+  }
+
+  .hexagon_w {
+    color: white;
+    width: 60px;
+    height: 35px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .hexagon_w span {
+    margin: 45% 40% 0;
+  }
+  
+  .hexagon_w:before, .hexagon_w:after{
+    box-sizing: border-box;
+    content: '';
+    width: 60px;
+    height: 35px;
+    position: absolute;
+    background-color: white;
+    left: 0px;
+    z-index: -1;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  .hexagon_w:before {
+    transform: rotate(60deg);
+  }
+  .hexagon_w:after {
+    transform: rotate(-60deg);
+  }
+  
+  .container_tablero {
+    padding-right: 10px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+  }
+  
+  .grid-container-tablero-even {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    justify-items: center;
+    padding-top: 10px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    width: 200px;
+  }
+  
+  .grid-container-tablero-odd {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    justify-items: center;
+    padding-top: 5px;
+    padding-right: 100px;
+    padding-bottom: 5px;
+    padding-left: 65px;
+    width: 200px;
+  }
+  
+  .grid-item-tablero {
+    padding: 3px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-weight: 350;
+    border: solid transparent;
+    
+  }
+  
+  .link_hex {
+    color: #757373;
+    font-size: 3px;
+  }
+
+  .dado{
+    width: 100px;
+    height: 100px;
+    background-color:#8079a3;
+    text-align: center;
+    align-self: center;
+    margin: 0 auto;
+  }
+
+  .valor_dado{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    vertical-align:middle;
+    line-height:100px;
+  }
+
+  .atributos{
+    width: 1150px;
+    height: 200px;
+    background-color:#7cc9c3;
+    text-align: center;
+    align-self: center;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  .grid-container-atributos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+    height: 200px;
+  }
+
+  .grid-item-atributo {
+    padding: 3px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-weight: 350;
+    border: solid transparent;
+    justify-content: center;
+    align-items: center;
+    display: row;
+  }
+  .atributo_txt {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: justify;
+  }
+  .usuario{
+    padding-top: 10px;
+    content: url("../imgs/usuario.jpg");
+    width: 170px;
+  }
+
+  .btn_atributo {
+    height: 45px;
+    width: 125px;
+    border: solid var(--color-tres); /*#cfa2b6;*/
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    background:  var(--color-tres);/*#cfa2b6;*/
+    cursor:pointer;
+    margin-top: 35px;
+  }
